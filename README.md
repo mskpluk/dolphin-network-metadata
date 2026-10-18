@@ -17,6 +17,14 @@ Dolphin treats network filesystems (cifs and NFS; from KDE Frameworks 6.31
 also sshfs, rclone and other remote mounts) as "slow" and skips reading
 metadata from them, even on a fast home network.
 
+## Upstream fix
+
+A proper fix is in progress in
+[baloo-widgets MR 82](https://invent.kde.org/libraries/baloo-widgets/-/merge_requests/82).
+Once it's in your distribution, Dolphin shows the full details for single
+files on network shares by itself, and this library only adds item counts
+for folders. If you don't need those, run `./uninstall.sh`.
+
 ## Install
 
 You need a C compiler (`gcc` or `clang`) and Dolphin from KDE Frameworks 6.
